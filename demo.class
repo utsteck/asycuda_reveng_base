@@ -1,0 +1,88 @@
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.util.HashMap;
+import java.util.Map;
+
+// Custom WebDriver-like class for Swing components
+class SwingDriver {
+    private final Map<String, Component> componentMap = new HashMap<>();
+
+    // Register components with an ID
+    public void registerComponent(String id, Component component) {
+        componentMap.put(id, component);
+    }
+
+    // Find component by ID
+    public Component findElementById(String id) {
+        return componentMap.get(id);
+    }
+
+    // Click a button
+    public void click(String id) {
+        Component comp = componentMap.get(id);
+        if (comp instanceof JButton) {
+            ((JButton) comp).doClick();
+        }
+    }
+
+    // Set text in a text field
+    public void setText(String id, String text) {
+        Component comp = componentMap.get(id);
+        if (comp instanceof JTextField) {
+            ((JTextField) comp).setText(text);
+        }
+    }
+
+    // Get text from a label or text field
+    public String getText(String id) {
+        Component comp = componentMap.get(id);
+        if (comp instanceof JLabel) {
+            return ((JLabel) comp).getText();
+        } else if (comp instanceof JTextField) {
+            return ((JTextField) comp).getText();
+        }
+        return null;
+    }
+}
+
+// Main GUI class
+public class SwingWebDriverExample {
+    public static void main(String[] args) {
+        SwingUtilities.invokeLater(() -> {
+            JFrame frame = new JFrame("Swing WebDriver Example");
+            frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+            frame.setSize(400, 300);
+            frame.setLayout(new FlowLayout());
+
+            SwingDriver driver = new SwingDriver();
+
+            JTextField textField = new JTextField(20);
+            JButton button = new JButton("Click Me");
+            JLabel label = new JLabel("Output:");
+
+            // Register components
+            driver.registerComponent("inputField", textField);
+            driver.registerComponent("submitButton", button);
+            driver.registerComponent("outputLabel", label);
+
+            button.addActionListener(e -> label.setText("Output: " + textField.getText()));
+
+            frame.add(textField);
+            frame.add(button);
+            frame.add(label);
+            frame.setVisible(true);
+
+            // Simulate interactions
+            new Timer(2000, new ActionListener() {
+                @Override
+                public void actionPerformed(ActionEvent e) {
+                    driver.setText("inputField", "Hello Swing!");
+                    driver.click("submitButton");
+                    System.out.println(driver.getText("outputLabel"));
+                }
+            }).start();
+        });
+    }
+}

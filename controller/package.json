@@ -1,0 +1,25 @@
+{
+  "name": "aw_controller",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js",
+    "mini": "webpack --config webpack.config.js",
+    "build": "pkg dist/built.js --targets node18-win-x64 -o ./build/666b689b55b203bf751dde39 "
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "websocket": "^1.0.35"
+  },
+  "devDependencies": {
+    "@types/websocket": "^1.0.10",
+    "webpack-cli": "^5.1.4"
+  },
+  "pkg": {
+    "scripts": [
+      "dist/built.js"
+    ]
+  }
+}

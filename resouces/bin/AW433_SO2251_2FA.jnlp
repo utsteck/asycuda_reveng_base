@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- JNLP File for ASYCUDAWorld Application -->
+<jnlp spec="1.0+"  codebase="https://customs.gov.bd/web433so2251" href="AW433_SO2251_2FA.jnlp">
+  <information>
+    <title>BD ASYCUDA World</title>
+    <vendor>UNCTAD - ASYCUDA</vendor>
+    <homepage href="https://customs.gov.bd/web433so2251"/>
+    <description>ASYCUDA World Description</description>
+    <description kind="short">This is the ASYCUDA World client, containing a basic set of Customs e-documents</description>
+    <description kind="tooltip">ASYCUDA World Description</description>
+    <icon href="img/jnlp/AW_image_install.jpg" />
+     <icon kind="splash" href="img/jnlp/AW_image_splash.jpg" />
+    </information>
+  <security>
+      <all-permissions/>
+  </security>
+
+  <resources>
+    <property name="un.remotetartabinvocation" value="false"/>
+    <j2se href="http://java.sun.com/products/autodl/j2se" initial-heap-size="2000m" max-heap-size="4000m" version="1.6+" java-vm-args="-Djava.net.preferIPv4Stack=true" />
+    <property name="java.util.logging.manager" value="so.util.logging.SOLogManager"/>
+    <property name="java.util.logging.config.file" value="./logging.properties"/>
+    <property name="so.rmi.transport.logLevel" value="VERBOSE"/>
+    <jar href="lib/client.jar" main="true"/>
+    <jar href="lib/skin.jar" main="false"/>
+    <jar href="lib/kswing.jar" main="false"/>
+    <jar href="lib/sslca.jar" main="false"/>
+    <jar href="lib/admin.jar" main="false"/>
+    <jar href="lib/adminc.jar" main="false"/>
+    <jar href="lib/core.jar" main="false"/>
+    <jar href="lib/intrl.jar" main="false"/>
+    <jar href="lib/intrlc.jar" main="false"/>
+    <jar href="lib/server_stub.jar" main="false"/>
+    <jar href="lib/te.jar" main="false"/>
+    <jar href="lib/tec.jar" main="false"/>
+    <jar href="lib/print.jar" main="false"/>
+    <jar href="lib/htec.jar" main="false"/>
+    <jar href="lib/hte.jar" main="false"/>
+    <jar href="lib/emsc.jar" main="false"/>
+    <jar href="lib/emscs.jar" main="false"/>
+    <jar href="lib/ems.jar" main="false"/>
+    <jar href="lib/ext/ktl.jar" main="false"/>
+    <jar href="lib/ext/ktlc.jar" main="false"/>
+    <jar href="lib/ext/rmisec.jar" main="false"/>
+    <jar href="lib/ext/si18n.jar" main="false"/>
+    <jar href="lib/ext/soutil.jar" main="false"/>
+    <jar href="lib/ext/arefc.jar" main="false"/>
+    <jar href="lib/ext/swingx.jar" main="false"/>
+    <jar href="lib/ext/arefdbfsspi.jar" main="false"/>
+    <jar href="lib/ext/fingerprint.jar" main="false"/>
+    <jar href="lib/ext/x509-jndi.jar" main="false"/>
+    <jar href="lib/ext/sjndi.jar" main="false"/>
+    <jar href="lib/ext/validator.jar" main="false"/>
+    <jar href="lib/ext/dictPassValidator.jar" main="false"/>
+    <jar href="lib/ext/arefextc.jar" main="false"/>
+    <jar href="lib/ext/aref.jar" main="false"/>
+    <jar href="lib/ext/arefextcs.jar" main="false"/>
+    <jar href="lib/ext/arefext.jar" main="false"/>
+    <jar href="lib/ext/arefextsdbfs.jar" main="false"/>
+    <jar href="lib/ext/socrypto.jar" main="false"/>
+    <jar href="lib/ext/jdbc/derby.jar" main="false"/>
+    <jar href="lib/ext/jdbc/hsqldb.jar" main="false"/>
+    <jar href="lib/ext/jcommon-1.0.16.jar" main="false"/>
+    <jar href="lib/ext/jfreechart-1.0.13.jar" main="false"/>
+    <jar href="lib/ext/gson-2.8.2.jar" main="false"/> 
+    <jar href="lib/dgnst.jar" main="false"/>
+    <jar href="lib/dgnstc.jar" main="false"/>
+    <jar href="lib/template.jar" main="false"/>
+    <jar href="lib/tutorialc.jar" main="false"/>
+    <jar href="lib/tutorial.jar" main="false"/>
+    <jar href="lib/emsDemo.jar" main="false"/>
+    <jar href="lib/emsDemoc.jar" main="false"/>
+    <jar href="lib/company.jar" main="false"/>
+    <jar href="lib/companyc.jar" main="false"/>
+    <jar href="lib/studiodocs.jar" main="false"/>
+    <jar href="lib/studiodocsc.jar" main="false"/>
+    <jar href="lib/templatec.jar" main="false"/>
+    <jar href="lib/democ.jar" main="false"/>
+    <jar href="lib/demo.jar" main="false"/>
+    <jar href="lib/externalMail.jar" main="false"/>
+    <jar href="lib/externalMailc.jar" main="false"/>
+    <jar href="lib/asybridge.jar" main="false"/>
+    <jar href="lib/asybridgec.jar" main="false"/>
+    <jar href="lib/asygate.jar" main="false"/>
+    <jar href="lib/asygatec.jar" main="false"/>
+    <jar href="lib/asycfg.jar" main="false"/>
+    <jar href="lib/asycfgc.jar" main="false"/>
+    <jar href="lib/adtcommons.jar" main="false"/>
+    <jar href="lib/adtcommonsc.jar" main="false"/>
+    <jar href="lib/asyprd.jar" main="false"/>
+    <jar href="lib/asyprdc.jar" main="false"/>
+    <jar href="lib/asyacc.jar" main="false"/>
+    <jar href="lib/asyaccc.jar" main="false"/>
+    <jar href="lib/asyman.jar" main="false"/>
+    <jar href="lib/asymanc.jar" main="false"/>
+    <jar href="lib/asybrk.jar" main="false"/>
+    <jar href="lib/asybrkc.jar" main="false"/>
+    <jar href="lib/asysta.jar" main="false"/>
+    <jar href="lib/asystac.jar" main="false"/>
+    <jar href="lib/asytar.jar" main="false"/>
+    <jar href="lib/asytarc.jar" main="false"/>
+    <jar href="lib/asyint.jar" main="false"/>
+    <jar href="lib/asyintc.jar" main="false"/>
+    <jar href="lib/asyref.jar" main="false"/>
+    <jar href="lib/asyrefc.jar" main="false"/>
+    <jar href="lib/asyfci.jar" main="false"/>
+    <jar href="lib/asyfcic.jar" main="false"/>
+    <jar href="lib/asyval.jar" main="false"/>
+    <jar href="lib/asyvalc.jar" main="false"/>
+    <jar href="lib/asytax.jar" main="false"/>
+    <jar href="lib/asyadmin.jar" main="false"/>
+    <jar href="lib/asyadminc.jar" main="false"/>
+    <jar href="lib/asyfmc.jar" main="false"/>
+    <jar href="lib/asyfmcc.jar" main="false"/>
+    <jar href="lib/asyscan.jar" main="false"/>
+    <jar href="lib/asyscanc.jar" main="false"/>
+    <jar href="lib/asylink.jar" main="false"/>
+    <jar href="lib/asylinkc.jar" main="false"/>
+    <jar href="lib/asybnk.jar" main="false"/>
+    <jar href="lib/asybnkc.jar" main="false"/>
+    <jar href="lib/asyrpt.jar" main="false"/>
+    <jar href="lib/asyrptc.jar" main="false"/>
+    <jar href="lib/asycdn.jar" main="false"/>
+    <jar href="lib/asycdnc.jar" main="false"/>
+    <jar href="lib/asychq.jar" main="false"/>
+    <jar href="lib/asychqc.jar" main="false"/>
+    <jar href="lib/nattrs.jar" main="false"/>
+    <jar href="lib/nattrsc.jar" main="false"/>
+    <jar href="lib/asyusr.jar" main="false"/>
+    <jar href="lib/asyusrc.jar" main="false"/>
+    <jar href="lib/asytir.jar" main="false"/>
+    <jar href="lib/asytirc.jar" main="false"/>
+    <jar href="lib/asybar.jar" main="false"/>
+    <jar href="lib/asybarc.jar" main="false"/>
+    <jar href="lib/reports.jar" main="false"/>
+    <jar href="lib/reportsc.jar" main="false"/>
+    <jar href="lib/as2ssch.jar" main="false"/>
+    <jar href="lib/as2sschc.jar" main="false"/>
+    <jar href="lib/awclient.jar" main="true" />
+    <jar href="lib/licence.jar" main="false"/>
+    <jar href="lib/licencec.jar" main="false"/>
+  </resources>
+<application-desc main-class="un.kernel.client.AWDesktopMain">
+<!--  <application-desc main-class="so.kernel.client.DesktopMain">-->
+    <argument>https://customs.gov.bd/web433so2251/help/</argument>
+    <argument>//customs.gov.bd:2006/</argument>
+    <argument>-dout</argument>
+    <argument>Solaris433_2FA</argument>
+            <argument>N</argument>
+            <argument>Y</argument>
+  </application-desc>
+  <update check="always" policy="always" />
+</jnlp>
